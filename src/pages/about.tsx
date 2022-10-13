@@ -1,7 +1,5 @@
-
 import type { NextPage } from "next";
 import StyleCard from "../components/StyleCard";
-
 
 const about: NextPage = () => {
   return (
