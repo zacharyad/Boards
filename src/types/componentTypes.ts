@@ -1,6 +1,6 @@
 export type StyleCardWithLink = {
     name: string;
-    desc: string;
+    desc: string | string[];
     linkPath: string;
     linkText: string;
   };
