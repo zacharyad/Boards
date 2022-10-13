@@ -8,11 +8,14 @@ const Auth: NextPage = () => {
 
   return (
     <>
-      <section className="container mx-auto flex min-h-screen flex-col items-center justify-center p-4">
+      <div className="container mx-auto flex max-h-screen min-h-screen min-w-full flex-col items-center justify-center bg-indigo-100">
         <AuthCard name={authType} desc={"Login with a magic link send to you email. You will be redirected to your dashboard."} />
-      </section>
+      </div>
+
     </>
   );
 };
 
 export default Auth;
+
+
