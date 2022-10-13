@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import AuthCard from "../components/AuthCard"
 
 const Auth: NextPage = () => {
-    const [authType, setAuthType] = useState("Login")
+    const [authType] = useState("Login")
 
   return (
     <>
@@ -15,5 +15,4 @@ const Auth: NextPage = () => {
 };
 
 export default Auth;
-
 

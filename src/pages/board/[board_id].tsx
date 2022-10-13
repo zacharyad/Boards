@@ -2,9 +2,10 @@
 import type { NextPage } from "next";
 import { useRouter} from 'next/router'
 import StyleCard from "../../components/StyleCard";
-
-const board: NextPage = () => {
-    const {board_id} = useRouter().query
+    
+const Board: NextPage = () => {
+    const router = useRouter()
+    const { board_id } = router.query
     
     return (
         <>
@@ -18,4 +19,4 @@ const board: NextPage = () => {
     );
 };
 
-export default board;
+export default Board;
