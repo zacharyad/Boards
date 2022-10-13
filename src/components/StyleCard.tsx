@@ -7,7 +7,7 @@ const StyleCard =  ({
     linkPath,
     linkText
   }: StyleCardWithLink) => {
-    console.log(linkText)
+ 
     return (
       <div  className="p-8 flex justify-center w-screen h-full">
       <section className="bg-indigo-50 flex flex-col w-1/2 items-center rounded border-2 border-indigo-900 p-6 shadow-xl duration-500 motion-safe:hover:scale-105">

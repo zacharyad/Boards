@@ -12,8 +12,8 @@ export type StyleCardWithLink = {
 
   };
 
-  export type modalObj = {
-    isModal: boolean, toggleModal: Function
+  export interface modalObj {
+    isModal: boolean, toggleModal: () => void; 
 }
 
 

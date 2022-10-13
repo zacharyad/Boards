@@ -3,7 +3,7 @@ import {modalObj} from '../types/componentTypes'
 
 const Navbar = ({isModal, toggleModal}: modalObj) => {
 
-    if(toggleModal) return (
+    return (
     <>
         <div onClick={() => toggleModal()} className={`${!isModal ? "hidden" : ""} absolute top-0 left-0 w-full h-full bg-white/20 backdrop-blur-sm`}></div>
 

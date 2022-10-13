@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
 
   function toggleModal() {
     isModal ? setModal(!isModal) : setModal(!isModal);
+    return;
   }
   return (
     <>
