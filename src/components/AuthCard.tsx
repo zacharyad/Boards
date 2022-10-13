@@ -4,7 +4,6 @@ import {StyleCardWithOutLink} from "../types/componentTypes"
 const AuthCard =  ({
     name,
     desc,
-    linkPath,
   }: StyleCardWithOutLink) => {
 
     const [isAnimated, setAnimationPlay] = useState(false)
