@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import StyleCard from "../components/StyleCard";
 
 
-const contact: NextPage = () => {
+const Contact: NextPage = () => {
   return (
     <>
       <div className="container mx-auto flex max-h-screen min-h-screen min-w-full flex-col items-center justify-center bg-indigo-100">
@@ -16,4 +16,4 @@ const contact: NextPage = () => {
   );
 };
 
-export default contact;
+export default Contact;
