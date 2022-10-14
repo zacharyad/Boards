@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import StyleCard from "../components/StyleCard";
 
-const about: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <div className="container mx-auto flex max-h-screen min-h-screen min-w-full flex-col items-center justify-center bg-indigo-100">
@@ -14,4 +14,4 @@ const about: NextPage = () => {
   );
 };
 
-export default about;
+export default About;

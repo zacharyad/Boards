@@ -1,3 +1,4 @@
+import { spawn } from 'child_process';
 import {useState} from 'react'
 import {StyleCardWithOutLink} from "../types/componentTypes"
 
@@ -29,7 +30,10 @@ const AuthCard =  ({
 
             <div className="p-2"></div>
 
-          <button onClick={() => animateDuration(500)} onAnimationEnd={() => setAnimationPlay(false)} className={`${isAnimated ? "animate-bounce" : ""} rounded border duration-200 border-black`}>{name}</button>
+          <button 
+          onClick={() => animateDuration(1500)} 
+          onAnimationEnd={() => setAnimationPlay(false)} 
+          className={`${isAnimated ? "animate-bounce bg-slate-400 rounded-3xl text-white" : ""} rounded border duration-200 border-black`}>{isAnimated ? <div className="animate-pulse">Loading...</div> : name}</button>
       </section>
       </div>
     );

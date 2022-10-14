@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   const [isModal, setModal] = useState(false);
