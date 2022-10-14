@@ -8,7 +8,6 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <Component {...pageProps} />;
     </Layout>
   )
-  
 };
 
 export default MyApp;
