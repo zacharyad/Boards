@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import {modalObj} from '../types/componentTypes'
 
-const Navbar = ({isModal, toggleModal}: modalObj) => {
+const Navbar = ({isModal, toggleModal, user_id}: modalObj) => {
 
     return (
     <>
@@ -11,6 +11,10 @@ const Navbar = ({isModal, toggleModal}: modalObj) => {
             <div className=" justify-around basis-1/4 hidden md:flex">
                 <Link href="/about">About</Link>
                 <Link href="/contact">Contact</Link>
+                {
+                    user_id ? <Link href="/dashboard">Your Dashboard</Link> : <div/>
+                }
+                
             </div>
             <div onClick={() => toggleModal()} className="flex basis-1/4 md:hidden">
                 <div className="space-y-2">
@@ -29,7 +33,9 @@ const Navbar = ({isModal, toggleModal}: modalObj) => {
             </div>
 
             <ul className="flex justify-end basis-1/4">
-                <Link href="/auth">Login</Link>
+                {
+                    !user_id ? <Link href="/auth">Login</Link> : <div/>
+                }
             </ul>
         </nav>
     </>
